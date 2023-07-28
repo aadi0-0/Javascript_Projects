@@ -13,24 +13,22 @@ body {
   background: #f6f7fb;
 }
 .container {
-  position: relative;
-  height: 420px;
-  width: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-image: url("user-image.jpg");
   background-size: cover;
+  height: 25rem;
+  width: 20rem;
   background-position: center;
-  border-radius: 12px;
+  border-radius: 10px;
   cursor: pointer;
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
 }
 
-.container .heart {
-    position: absolute;
-    color: red;
-    font-size: 40px;
-    opacity: 0;
-    transform: translate(130px, 173px);
-  }
+.comp{
+  z-index: -1;
+  color: red;
+}
 
   .heart.active {
     animation: animate 0.8s linear forwards;
